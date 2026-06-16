@@ -1,0 +1,220 @@
+
+.projects-editor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-edit-card {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.add-project-btn {
+  color: var(--secondary) !important;
+  font-weight: 600 !important;
+  border: 1px dashed rgba(0, 212, 255, 0.3) !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.add-project-btn:hover {
+  background: rgba(0, 212, 255, 0.05) !important;
+  border-color: var(--secondary) !important;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.project-edit-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.project-card-header {
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-header h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #EF4444;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.delete-btn:hover {
+  background: #EF4444;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.project-edit-card input, 
+.project-edit-card textarea {
+  width: 100%;
+  background: var(--bg-darker) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  color: white !important;
+  font-size: 13px !important;
+}
+
+.project-edit-card input:focus, 
+.project-edit-card textarea:focus {
+  border-color: var(--secondary) !important;
+  outline: none;
+}
+
+.project-github-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-darker);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 4px 12px;
+  transition: var(--transition);
+}
+
+.project-github-input input {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.project-github-input:focus-within {
+  border-color: var(--secondary);
+}
+
+.project-github-input svg {
+  color: var(--text-muted);
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.tech-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+  flex: 1;
+}
+
+.tech-tag-pill {
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.remove-tag-btn {
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-dim);
+  line-height: 1;
+  transition: var(--transition);
+}
+
+.remove-tag-btn:hover {
+  color: var(--secondary);
+}
+
+.project-tech-input {
+  background: transparent !important;
+  border: none !important;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px !important;
+  width: 100px !important;
+  outline: none;
+}
+
+.project-tech-input:focus {
+  box-shadow: none !important;
+}
+
+.project-ai-btn {
+  background: transparent;
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: var(--transition);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.project-ai-btn.compact {
+  padding: 4px 10px;
+  height: 28px;
+  margin-left: auto;
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.project-ai-btn:hover {
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

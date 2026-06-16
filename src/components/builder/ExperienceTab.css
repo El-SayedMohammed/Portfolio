@@ -1,0 +1,112 @@
+
+.section-title-form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.projects-editor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-edit-card {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.project-edit-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.project-card-header {
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-header h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #EF4444;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.delete-btn:hover {
+  background: #EF4444;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.project-edit-card input, 
+.project-edit-card textarea {
+  width: 100%;
+  background: var(--bg-darker) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  color: white !important;
+  font-size: 13px !important;
+}
+
+.project-edit-card input:focus, 
+.project-edit-card textarea:focus {
+  border-color: var(--secondary) !important;
+  outline: none;
+}
+
+.add-project-btn {
+  color: var(--secondary) !important;
+  font-weight: 600 !important;
+  border: 1px dashed rgba(0, 212, 255, 0.3) !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.add-project-btn:hover {
+  background: rgba(0, 212, 255, 0.05) !important;
+  border-color: var(--secondary) !important;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15) !important;
+  transform: translateY(-2px);
+}
